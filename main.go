@@ -31,6 +31,7 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 }
 
+// This returns a list of authors.
 func authorHandler(responseWriter http.ResponseWriter, request *http.Request) {
 	favouriteAuthorsJSON, err := json.Marshal(favouriteAuthors)
 
